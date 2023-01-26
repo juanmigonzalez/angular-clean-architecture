@@ -7,7 +7,11 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "tests:functional": "jest --coverage=false --testTimeout=60000 tests/functional --maxWorkers=50%",
+    "tests:integration": "jest --coverage=false tests/integration --maxWorkers=50%",
+    "tests:unit": "IS_UNIT=true jest --coverage=false tests/unit --maxWorkers=50%",
+    "tests:unit:coverage": "IS_UNIT=true jest --coverage=true --ci tests/unit"
   },
   "private": true,
   "dependencies": {
