@@ -12,7 +12,8 @@
     "tests:integration": "ng lint && jest --coverage=false tests/integration --maxWorkers=50%",
     "tests:unit": "ng lint && IS_UNIT=true jest --coverage=false tests/unit --maxWorkers=50%",
     "tests:unit:coverage": "ng lint && IS_UNIT=true jest --coverage=true --ci tests/unit",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {
@@ -41,6 +42,7 @@
     "@typescript-eslint/eslint-plugin": "5.48.1",
     "@typescript-eslint/parser": "5.48.1",
     "eslint": "^8.32.0",
+    "husky": "^8.0.3",
     "jest": "^29.4.1",
     "jest-canvas-mock": "^2.4.0",
     "jest-environment-jsdom": "^29.4.1",
