@@ -1,6 +1,8 @@
 # Angular Clean Architecture Template
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.
+This repository is intended to serve as a template for developing an Angular project with clean architecture.
+
+This architecture allows you to keep the business logic separate, so you can use this idea for use with other frameworks just by extracting the "lib" folder from it.
 
 ## Development server
 
