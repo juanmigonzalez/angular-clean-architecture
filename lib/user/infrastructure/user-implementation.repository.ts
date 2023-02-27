@@ -1,13 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
-import { UserModel } from 'src/app/core/domain/models/user.model';
+import { UserModel } from 'lib/user/domain/models/user.model';
 import {
   GetUserParams,
   LoginParams,
   RegisterParams,
   UserRepository,
-} from 'src/app/core/domain/repositories/user.repository';
+} from 'lib/user/domain/repositories/user.repository';
 import { UserEntity } from './user.entity';
 import { UserImplementationRepositoryMapper } from './user-implementation.repository.mapper';
 
@@ -35,7 +35,7 @@ export class UserImplementationRepository extends UserRepository {
 
   getUser(params: GetUserParams): Observable<UserModel> {
     return this.http
-      .post<UserEntity>('', { params })
+      .get<UserEntity>('', { params })
       .pipe(map(this.userMapper.mapFrom));
   }
 }
