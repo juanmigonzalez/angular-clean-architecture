@@ -23,7 +23,7 @@ This projects is built with `pnpm` and is configured using this depedencies to e
 
 `pnmp run test` -> Run all the tests
 
-`pnmp run test:fucntional` -> Run only functional tests
+`pnmp run test:functional` -> Run only functional tests
 
 `pnmp run test:integration` -> Run only integration tests
 
