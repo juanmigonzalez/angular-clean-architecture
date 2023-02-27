@@ -12,23 +12,19 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 This projects is built with `pnpm` and is configured using this depedencies to ensure good practices:
 
-- jest
+- commit-lint
 - eslint
 - husky
-- commit-lint
+- jest
 
-## `pnpm run` commands
+## Relevant commands
 
-```
-start: "ng serve",
-build: "ng build",
-watch: "ng build --watch --configuration development",
-test: "ng lint && jest",
-test:watch: "ng lint && jest --watch",
-tests:functional: "ng lint && jest --coverage=false --testTimeout=60000 tests/functional --maxWorkers=50%",
-tests:integration: "ng lint && jest --coverage=false tests/integration --maxWorkers=50%",
-tests:unit: "ng lint && IS_UNIT=true jest --coverage=false tests/unit --maxWorkers=50%",
-tests:unit:coverage: "ng lint && IS_UNIT=true jest --coverage=true --ci tests/unit",
-lint: "ng lint",
-prepare: "husky install"
-```
+`pnmp run start` -> Run the aplication
+
+`pnmp run test` -> Run all the tests
+
+`pnmp run test:fucntional` -> Run only functional tests
+
+`pnmp run test:integration` -> Run only integration tests
+
+`pnmp run test:unit` -> Run only unit tests
