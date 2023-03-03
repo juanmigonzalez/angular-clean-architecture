@@ -1,7 +1,7 @@
-import { Observable } from 'rxjs';
-import { UseCase } from 'src/app/shared/models/use-case';
+import { UseCase } from 'lib/cross-cutting/models/use-case';
 import { UserModel } from '../models/user.model';
 import { LoginParams, UserRepository } from '../repositories/user.repository';
+import { Observable } from 'rxjs';
 
 export class UserLoginUseCase implements UseCase<LoginParams, UserModel> {
   constructor(private userRepository: UserRepository) {}

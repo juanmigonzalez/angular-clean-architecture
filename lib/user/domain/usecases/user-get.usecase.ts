@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs';
-import { UseCase } from 'src/app/shared/models/use-case';
+import { UseCase } from '../../../cross-cutting/models/use-case';
 import { UserModel } from '../models/user.model';
 import { GetUserParams, UserRepository } from '../repositories/user.repository';
 

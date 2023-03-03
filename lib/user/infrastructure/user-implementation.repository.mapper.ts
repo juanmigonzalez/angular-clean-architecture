@@ -1,4 +1,4 @@
-import { Mapper } from 'src/app/shared/models/mapper';
+import { Mapper } from 'lib/cross-cutting/models/mapper';
 import { UserEntity } from './user.entity';
 import { UserModel } from 'lib/user/domain/models/user.model';
 

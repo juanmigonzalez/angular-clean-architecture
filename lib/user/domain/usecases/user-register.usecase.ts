@@ -1,6 +1,7 @@
-import { Observable } from 'rxjs';
-import { UseCase } from 'src/app/shared/models/use-case';
+import { UseCase } from 'lib/cross-cutting/models/use-case';
 import { UserModel } from '../models/user.model';
+import { Observable } from 'rxjs';
+
 import {
   RegisterParams,
   UserRepository,
