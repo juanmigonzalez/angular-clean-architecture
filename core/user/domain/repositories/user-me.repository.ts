@@ -11,13 +11,7 @@ export type RegisterParams = {
   password: string;
 };
 
-export type GetUserParams = {
-  userId: string;
-  accessToken: string;
-};
-
-export abstract class UserRepository {
+export abstract class UserMeRepository {
   abstract login(params: LoginParams): Observable<UserModel>;
   abstract register(params: RegisterParams): Observable<UserModel>;
-  abstract getUser(params: GetUserParams): Observable<UserModel>;
 }

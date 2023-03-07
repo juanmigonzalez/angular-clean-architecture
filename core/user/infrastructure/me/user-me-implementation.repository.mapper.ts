@@ -1,12 +1,12 @@
-import { Mapper } from 'lib/cross-cutting/models/mapper';
-import { UserEntity } from './user.entity';
-import { UserModel } from 'lib/user/domain/models/user.model';
+import { Mapper } from 'core/cross-cutting/models/mapper';
+import { UserModel } from 'core/user/domain/models/user.model';
+import { UserMeEntity } from './user-me.entity';
 
-export class UserImplementationRepositoryMapper extends Mapper<
-  UserEntity,
+export class UserMeImplementationRepositoryMapper extends Mapper<
+  UserMeEntity,
   UserModel
 > {
-  mapFrom(param: UserEntity): UserModel {
+  mapFrom(param: UserMeEntity): UserModel {
     return {
       id: param.id,
       name: param.username,
@@ -16,7 +16,7 @@ export class UserImplementationRepositoryMapper extends Mapper<
     };
   }
 
-  mapTo(param: UserModel): UserEntity {
+  mapTo(param: UserModel): UserMeEntity {
     return {
       id: param.id,
       username: param.name,
