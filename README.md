@@ -2,7 +2,7 @@
 
 This repository is intended to serve as a template for developing an Angular project with clean architecture and atomic design for components.
 
-This architecture allows you to keep the business logic separate, so you can use this idea for use with other frameworks just by extracting the "lib" folder from it.
+This architecture allows you to keep the business logic separate, so you can use this idea for use with other frameworks just by extracting the "core" folder from it.
 
 ## Dependencies
 
